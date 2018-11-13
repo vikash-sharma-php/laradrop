@@ -50,8 +50,7 @@ class LaradropController extends BaseController {
             $files = $this->file->get(Input::get('pid'));
             
             return response()->json([
-                'status' => 'success',
-                'data' => $files,
+                'status' => 'success'
             ]);
         }
         
